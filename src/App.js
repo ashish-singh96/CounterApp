@@ -6,20 +6,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Register from './component/CodeStepByStep/Register';
 import AddProduct from './component/CodeStepByStep/AddProduct';
 import UpdateProduct from './component/CodeStepByStep/UpdateProduct';
+import Sidebar from './component/DemoSite/SideBar/Sidebar';
+import Navbar from './component/DemoSite/NavBar/Navbar'
+
 function App() {
   return (
     <div>
-      {/* <Counter/> */}
-      {/* <Login/> */}
-
-      <BrowserRouter>
-        <Header />
-
-        <Route path='/login'><Login /></Route>
-        <Route path='/register'><Register /></Route>
-        <Route path='/addproduct'><AddProduct /></Route>
-        <Route path='/updateproduct'><UpdateProduct /></Route>
-      </BrowserRouter>
+         <Navbar/>
+         <Sidebar/>
 
     </div>
   );
